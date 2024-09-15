@@ -18,6 +18,7 @@ body {
     text-align: center;
     position: relative;
     overflow: hidden;
+    z-index: 10;
 }
 
 .number_48 {
@@ -28,7 +29,10 @@ body {
 
 .number_48 #recieve {
     animation: swing 5s linear infinite;
+    animation-delay: 0;
     transform-origin: top;
+    margin-top: -3rem;
+    z-index: -1;
 }
 
 @keyframes swing {
@@ -36,20 +40,16 @@ body {
         transform: rotate(0deg);
     }
 
-    20% {
-        transform: rotate(45deg);
+    25% {
+        transform: rotate(15deg);
     }
 
-    40% {
+    50% {
         transform: rotate(0deg);
     }
 
-    60% {
-        transform: rotate(-45deg);
-    }
-
-    80% {
-        transform: rotate(0deg);
+    75% {
+        transform: rotate(-15deg);
     }
 
     100% {

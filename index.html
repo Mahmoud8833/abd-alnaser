@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>عبدالناصر موشن جرافيك</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Animate.css for animations -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- AOS (Animate on Scroll) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div>
+            <img src="img/logo.png" class="animate__animated animate__fadeInDown">
+            <br><br><br>
+            <!-- <p class="animate__animated animate__fadeInUp">احترافية في تصميم الجرافيك والموشن جرافيك</p> -->
+            <button class="btn-main" onclick="window.location.href='#services'">استكشاف الموقع</button>
+        </div>
+    </section>
+
+    <div class="number_48 animate__animated animate__fadeInDown">
+        <img src="img/48hours.png" alt="An image with the number 48">
+        <img src="img/recieve.png" alt="A banner with the words recieve your product" id="recieve">
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <a class="navbar-brand" href="#"><img src="img/logo.png" alt="logo image" class="img-fluid"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="#services">الخدمات</a></li>
+                <li class="nav-item"><a class="nav-link" href="#portfolio">معرض الأعمال</a></li>
+                <li class="nav-item"><a class="nav-link" href="#pricing">العروض</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">تواصل معنا</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Services Section -->
+    <section id="services" data-aos="fade-up">
+        <div class="container">
+            <h2>خدمات عبدالناصر</h2>
+            <div class="row">
+                <div class="col-lg-4 service-item">
+                    <h3>تصميمات جرافيك</h3>
+                    <p>تصميمات عصرية ومبتكرة لعلامتك التجارية.</p>
+                </div>
+                <div class="col-lg-4 service-item">
+                    <h3>موشن جرافيك</h3>
+                    <p>رسوم متحركة جذابة لنقل أفكارك بإبداع.</p>
+                </div>
+                <div class="col-lg-4 service-item">
+                    <h3>تصميم هوية بصرية</h3>
+                    <p>هوية بصرية متكاملة تعزز وجود علامتك.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" data-aos="fade-up">
+        <div class="container">
+            <h2>معرض الأعمال</h2>
+            <div class="row">
+                <div class="col-lg-4 portfolio-item">
+                    <img src="assets/img/portfolio/1.jpg" alt="Project 1" onclick="openModal('VIDEO_ID_1')">
+                </div>
+                <div class="col-lg-4 portfolio-item">
+                    <img src="assets/img/portfolio/2.jpg" alt="Project 2" onclick="openModal('VIDEO_ID_2')">
+                </div>
+                <div class="col-lg-4 portfolio-item">
+                    <img src="assets/img/portfolio/3.jpg" alt="Project 3" onclick="openModal('VIDEO_ID_3')">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" data-aos="fade-up">
+        <div class="container">
+            <h2>العروض والخصومات</h2>
+            <div class="row">
+                <div class="col-lg-4 pricing-item">
+                    <h3>الباقة الأولى</h3>
+                    <p>خدمات تصميم جرافيك كاملة</p>
+                </div>
+                <div class="col-lg-4 pricing-item">
+                    <h3>الباقة الثانية</h3>
+                    <p>خدمات الموشن جرافيك</p>
+                </div>
+                <div class="col-lg-4 pricing-item">
+                    <h3>الباقة الثالثة</h3>
+                    <p>تصميم هوية بصرية متكاملة</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" data-aos="fade-up">
+        <div class="container">
+            <h2>تواصل معنا</h2>
+            <p>هاتف: 123-456-789</p>
+            <p>إيميل: example@domain.com</p>
+            <div class="social-links">
+                <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-linkedin"></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal Overlay and Video -->
+    <div class="modal-overlay" id="modalOverlay"></div>
+    <div class="modal-video" id="modalVideo">
+        <iframe id="videoFrame" src="" frameborder="0" allowfullscreen></iframe>
+    </div>
+
+    <!-- Bootstrap JS, AOS JS, and Custom JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init();
+
+        function openModal(videoId) {
+            document.getElementById('videoFrame').src = 'https://www.youtube.com/embed/' + videoId;
+            document.getElementById('modalOverlay').style.display = 'block';
+            document.getElementById('modalVideo').style.display = 'block';
+        }
+
+        document.getElementById('modalOverlay').addEventListener('click', function () {
+            document.getElementById('modalOverlay').style.display = 'none';
+            document.getElementById('modalVideo').style.display = 'none';
+            document.getElementById('videoFrame').src = '';
+        });
+    </script>
+
+</body>
+
+</html>

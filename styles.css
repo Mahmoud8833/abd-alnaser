@@ -136,14 +136,14 @@ nav {
 
 /* About section */
 .about {
-    width: 100vw;
     height: fit-content;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* padding: 5rem; */
+    padding-top: 2rem;
     text-align: center;
+    margin: 2rem;
 }
 
 .about h1 {
@@ -155,7 +155,7 @@ nav {
 }
 
 .about p {
-    width: 80%;
+    width: 90%;
     color: #003f5a;
     font-size: 2rem;
     text-align: center;

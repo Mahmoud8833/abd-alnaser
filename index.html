@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="ar" dir="rtl">
 
 <head>
     <meta charset="UTF-8">
@@ -27,16 +27,14 @@
             <!-- <p class="animate__animated animate__fadeInUp">احترافية في تصميم الجرافيك والموشن جرافيك</p> -->
             <button class="btn-main" onclick="window.location.href='#services'">استكشاف الموقع</button>
         </div>
+        <div class="number_48 animate__animated animate__fadeInDown">
+            <img src="img/recieve.png" alt="A banner with the words recieve your product" id="recieve">
+            <img src="img/48hours.png" alt="An image with the number 48">
+        </div>
     </section>
-
-    <div class="number_48 animate__animated animate__fadeInDown">
-        <img src="img/48hours.png" alt="An image with the number 48">
-        <img src="img/recieve.png" alt="A banner with the words recieve your product" id="recieve">
-    </div>
 
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-        <a class="navbar-brand" href="#"><img src="img/logo.png" alt="logo image" class="img-fluid"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -49,22 +47,33 @@
                 <li class="nav-item"><a class="nav-link" href="#contact">تواصل معنا</a></li>
             </ul>
         </div>
+        <a class="navbar-brand" href="#"><img src="img/logo.png" alt="logo image" width="50px" height="50px"></a>
     </nav>
+
+    <section class="about" data-aos="fade-up">
+        <h1 id="about">متخصصون فى تصميم الموشن جرافيك</h1>
+        <p id="about_p">مصمم موشن جرافيك محترف. متخصص فى تحويل الأفكار إلى<br> رسومات متحركة مبتكرة تجمع بين الفن
+            والتقنية
+            الحديثة. <br>اصنع محتواك الذى يجذب الانتباه ويعزز الرسائل التسويقية والابداعية.</p>
+    </section>
 
     <!-- Services Section -->
     <section id="services" data-aos="fade-up">
         <div class="container">
-            <h2>خدمات عبدالناصر</h2>
+            <h2>ما نقدمه لك ...</h2>
             <div class="row">
                 <div class="col-lg-4 service-item">
-                    <h3>تصميمات جرافيك</h3>
+                    <img src="img/website.png" alt="An icon for website design">
+                    <h3>تصميمات مواقع</h3>
                     <p>تصميمات عصرية ومبتكرة لعلامتك التجارية.</p>
                 </div>
                 <div class="col-lg-4 service-item">
+                    <img src="img/motion.png" alt="An icon for motion graphic">
                     <h3>موشن جرافيك</h3>
                     <p>رسوم متحركة جذابة لنقل أفكارك بإبداع.</p>
                 </div>
                 <div class="col-lg-4 service-item">
+                    <img src="img/visual-id.png" alt="An icon for visual id">
                     <h3>تصميم هوية بصرية</h3>
                     <p>هوية بصرية متكاملة تعزز وجود علامتك.</p>
                 </div>
@@ -75,19 +84,35 @@
     <!-- Portfolio Section -->
     <section id="portfolio" data-aos="fade-up">
         <div class="container">
-            <h2>معرض الأعمال</h2>
-            <div class="row">
+            <h2>أعمالنا ...</h2>
+            <div class="row p-4">
                 <div class="col-lg-4 portfolio-item">
-                    <img src="assets/img/portfolio/1.jpg" alt="Project 1" onclick="openModal('VIDEO_ID_1')">
+                    <img src="img/vid-cover-1.png" alt="Project 1"
+                        onclick="openModal('oaZ1QWZ9HyU?si=d2eMBADGLIdaOQ5N')">
                 </div>
                 <div class="col-lg-4 portfolio-item">
-                    <img src="assets/img/portfolio/2.jpg" alt="Project 2" onclick="openModal('VIDEO_ID_2')">
+                    <img src="img/vid-cover-1.png" alt="Project 2"
+                        onclick="openModal('oaZ1QWZ9HyU?si=d2eMBADGLIdaOQ5N')">
                 </div>
                 <div class="col-lg-4 portfolio-item">
-                    <img src="assets/img/portfolio/3.jpg" alt="Project 3" onclick="openModal('VIDEO_ID_3')">
+                    <img src="img/vid-cover-1.png" alt="Project 3"
+                        onclick="openModal('oaZ1QWZ9HyU?si=d2eMBADGLIdaOQ5N')">
+                </div>
+                <div class="row p-4">
+                    <div class="col-lg-4 portfolio-item">
+                        <img src="img/vid-cover-1.png" alt="Project 1"
+                            onclick="openModal('oaZ1QWZ9HyU?si=d2eMBADGLIdaOQ5N')">
+                    </div>
+                    <div class="col-lg-4 portfolio-item">
+                        <img src="img/vid-cover-1.png" alt="Project 2"
+                            onclick="openModal('oaZ1QWZ9HyU?si=d2eMBADGLIdaOQ5N')">
+                    </div>
+                    <div class="col-lg-4 portfolio-item">
+                        <img src="img/vid-cover-1.png" alt="Project 3"
+                            onclick="openModal('oaZ1QWZ9HyU?si=d2eMBADGLIdaOQ5N')">
+                    </div>
                 </div>
             </div>
-        </div>
     </section>
 
     <!-- Pricing Section -->
@@ -115,8 +140,7 @@
     <section id="contact" data-aos="fade-up">
         <div class="container">
             <h2>تواصل معنا</h2>
-            <p>هاتف: 123-456-789</p>
-            <p>إيميل: example@domain.com</p>
+            <p class="social-links"><a href="https://wa.me/+201091690185" class="fab fa-whatsapp">+201091690185</a></p>
             <div class="social-links">
                 <a href="#" class="fab fa-facebook-f"></a>
                 <a href="#" class="fab fa-twitter"></a>

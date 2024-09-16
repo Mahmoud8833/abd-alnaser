@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@400;700;800&display=swap');
+
 body {
-    font-family: 'ManifaV2';
+    font-family: "Almarai";
     margin: 0;
     padding: 0;
     background-color: #f0f0f0;
@@ -7,32 +9,50 @@ body {
 
 /* Fullscreen Hero Section */
 #hero {
+    width: 100vw;
     height: 100vh;
-    background-color: linear-gradient(to bottom right, #0072ff, #00c6ff);
     background-image: url(img/back.png);
     background-size: cover;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    color: white;
+    color: rgb(255, 0, 0);
     text-align: center;
     position: relative;
-    overflow: hidden;
-    z-index: 10;
 }
 
 .number_48 {
     display: flex;
     justify-content: space-around;
     padding: 2rem;
+    width: 75%;
 }
 
 .number_48 #recieve {
     animation: swing 5s linear infinite;
     animation-delay: 0;
     transform-origin: top;
-    margin-top: -3rem;
-    z-index: -1;
+    margin-top: -15rem;
+    width: 50%;
+}
+
+@media screen and (max-width: 768px) {
+    #hero {
+        flex-direction: column;
+        height: fit-content;
+        background-size: auto;
+        background-position-x: center;
+        background-repeat: no-repeat;
+    }
+
+    .number_48 {
+        flex-direction: column;
+    }
+
+    .number_48 #recieve {
+        margin-top: 0;
+        z-index: -2;
+    }
 }
 
 @keyframes swing {
@@ -79,12 +99,11 @@ body {
     animation: zoomIn 1.2s ease-in-out;
 }
 
+
+
 .btn-main:hover {
     background-color: #e65c00;
-}
-
-.img-fluid {
-    height: 3rem;
+    cursor: pointer;
 }
 
 /* Add smooth scroll */
@@ -95,18 +114,43 @@ html {
 /* Navbar Styles */
 nav {
     background-color: rgba(0, 0, 0, 0.7);
+    width: 100vw;
     padding: 15px;
     transition: background-color 0.3s ease-in-out;
 }
 
-nav.scrolled {
-    background-color: #0072ff;
-}
-
-nav a.nav-link {
+.nav-link {
+    font-size: 1.5rem;
     color: white;
     margin-right: 15px;
     font-size: 1.1rem;
+}
+
+/* About section */
+.about {
+    width: 100vw;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* padding: 5rem; */
+    text-align: center;
+}
+
+.about h1 {
+    background-color: #007a7a;
+    padding: .5rem;
+    color: white;
+    border-radius: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.about p {
+    width: 80%;
+    color: #003f5a;
+    font-size: 2rem;
+    text-align: center;
 }
 
 /* Services Section */
@@ -114,6 +158,12 @@ nav a.nav-link {
     padding: 70px 0;
     text-align: center;
     background-color: #f0f0f0;
+    color: #de6600;
+}
+
+#services h2 {
+    margin-bottom: 2rem;
+    font-size: 3rem;
 }
 
 .service-item {
@@ -128,10 +178,23 @@ nav a.nav-link {
     transform: scale(1.05);
 }
 
+#services img {
+    width: 5rem;
+    height: 5rem;
+    margin-bottom: 1.5rem;
+}
+
 /* Portfolio Section */
 #portfolio {
     padding: 70px 0;
     background-color: #ffffff;
+}
+
+#portfolio h2 {
+    margin-bottom: 2rem;
+    font-size: 3rem;
+    text-align: center;
+    color: #de6600;
 }
 
 .portfolio-item img {

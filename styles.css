@@ -5,11 +5,12 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f0f0f0;
+    box-sizing: border-box;
 }
 
 /* Fullscreen Hero Section */
 #hero {
-    width: 100vw;
+    /* width: 100vw; */
     height: 100vh;
     background-image: url(img/back.png);
     background-size: cover;
@@ -148,7 +149,7 @@ nav {
     align-items: center;
     padding-top: 2rem;
     text-align: center;
-    margin: 2rem;
+    margin: 1rem;
 }
 
 .about h1 {
@@ -156,7 +157,7 @@ nav {
     padding: .5rem;
     color: white;
     border-radius: 1.5rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 
 .about p {
@@ -168,7 +169,7 @@ nav {
 
 /* Services Section */
 #services {
-    padding: 70px 0;
+    padding: 20px 0;
     text-align: center;
     background-color: #f0f0f0;
     color: #de6600;
@@ -199,7 +200,7 @@ nav {
 
 /* Portfolio Section */
 #portfolio {
-    padding: 70px 0;
+    padding: 20px 0;
     background-color: #ffffff;
 }
 

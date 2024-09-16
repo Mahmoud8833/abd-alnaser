@@ -25,7 +25,6 @@ body {
     display: flex;
     justify-content: space-around;
     padding: 2rem;
-    width: 75%;
 }
 
 .number_48 #recieve {
@@ -33,7 +32,6 @@ body {
     animation-delay: 0;
     transform-origin: top;
     margin-top: -15rem;
-    width: 50%;
 }
 
 @media screen and (max-width: 768px) {
@@ -43,15 +41,25 @@ body {
         background-size: auto;
         background-position-x: center;
         background-repeat: no-repeat;
+        padding-top: 6rem;
     }
 
     .number_48 {
-        flex-direction: column;
+        /* flex-direction: column; */
+        width: 75%;
+    }
+
+    .number_48 #hour {
+        width: 75%;
+        height: 12rem;
+        margin-top: 5rem;
     }
 
     .number_48 #recieve {
         margin-top: 0;
         z-index: -2;
+        width: 50%;
+        height: 15rem;
     }
 }
 

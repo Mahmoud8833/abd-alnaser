@@ -36,8 +36,9 @@ body {
 
 @media screen and (max-width: 768px) {
     #hero {
+        height: 100vh;
         flex-direction: column;
-        height: fit-content;
+        /* height: fit-content; */
         background-size: auto;
         background-position-x: center;
         background-repeat: no-repeat;
@@ -57,9 +58,13 @@ body {
 
     .number_48 #recieve {
         margin-top: 0;
-        z-index: -2;
         width: 50%;
         height: 15rem;
+    }
+
+    #about,
+    #about_p {
+        font-size: 1.5rem;
     }
 }
 
@@ -267,10 +272,11 @@ nav {
     padding: 70px 0;
     background-color: #ffffff;
     text-align: center;
+    color: #ff6600;
 }
 
 .social-links a {
-    color: #0072ff;
+    color: #003f5a;
     font-size: 2rem;
     margin: 10px;
     transition: color 0.3s ease;
